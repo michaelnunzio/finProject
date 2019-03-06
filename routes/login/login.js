@@ -224,7 +224,7 @@ router.route("/register/employer")
 
   /*********************************** login for Employer *******************************************/
   router.post('/login/employer', (req,res,next) => {
-
+    console.log("Employer route hit")
     passport.authenticate('employer', {successRedirect: '/compProfile',failureRedirect: '/login/employer'})(req, res, next)
   });
   // function(req, res) {
