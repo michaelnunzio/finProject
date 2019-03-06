@@ -40,13 +40,6 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 // Serve up static assets (usually on heroku) for production
-if (process.env.NODE_ENV === "production") {
- app.use(express.static("client/build"));
- //
-//  app.get('*', (req, res) => {
-//    res.sendfile(path.join(__dirname = 'client/build/index.html'));
-//  })
-}
 
 
 //build mode
@@ -96,7 +89,14 @@ app.use(expressValidator({
   app.use(users);
   app.use(routes);
   
-
+  if (process.env.NODE_ENV === "production") {
+    app.use(express.static("client/build"));
+    //
+    app.get('*', (req, res) => {
+      res.sendfile(path.join(__dirname = 'client/build/index.html'));
+    })
+   }
+   
 //Global Variables
 // app.use(function(req,res,next){
 //     res.locals.success_msg = req.flash('success_msg');
