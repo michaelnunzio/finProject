@@ -47,9 +47,11 @@ html, body, div#root {
   flex-direction: row;
   flex: 1;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  /* margin-left: 250px; */
   position: relative;
   top: 560px;
+  
 }
 
 .button {
@@ -83,6 +85,7 @@ html, body, div#root {
   position: relative;
   left: 10px;
   font-family: 'Slabo 27px', serif;
+  color: black;
  
 
 }
