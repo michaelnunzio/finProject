@@ -8,8 +8,12 @@ function register(){
     return(
       
         <React.Fragment>
-        <NavBar/>
-        <div className="container">
+
+                <div className='row newNn'>
+                    <NavBar company={true}/>
+                </div>
+
+        <div className="container cProfilee">
             <form className="form-signin" method="post" action="/register/candidate">
                 <h1 className="h3 mb-3 font-weight-normal">Register as a Candidate</h1>
                 <label htmlFor="inputFirstName" className="sr-only">First Name</label>

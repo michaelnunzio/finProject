@@ -6,10 +6,13 @@ function employerRegister(){
     return(
         <React.Fragment>
 
-            <NavBar/>
-                <div className="container">
+                <div className='row newNn'>
+                    <NavBar company={true}/>
+                </div>
+
+                <div className="container cProfilee" id='ccTwo'>
                     <form className="form-signin" method="post" action="/register/employer">
-                        <h1 className="h3 mb-3 font-weight-normal">Register as a Employer</h1>
+                        <h1 className="h3 mb-3 font-weight-normal regG">Register as a Employer</h1>
                         <label htmlFor="inputFirstName" className="sr-only">First Name</label>
                         <input type="text" name="FirstName" id="inputFirstName" className="form-control" placeholder="First Name" required autoFocus/>
                         <label htmlFor="inputLastName" className="sr-only">Last Name</label>

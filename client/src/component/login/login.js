@@ -7,12 +7,14 @@ import NavBar from "../nav/navBar"
 function login(){
     return(
         <React.Fragment>
-        <NavBar/>
-        <div className="container">
+                <div className='row newNn'>
+                    <NavBar company={true}/>
+                </div>
+        <div className="container cProfilee">
             <form className="form-signin" method="post" action="/login/candidate">
             
             <div className='col l8 offset-l2'>
-                <h1 className="h3">Welcome Candidate! Please Sign In</h1>
+                <h1 className="h3 regG">Welcome Candidate! Please Sign In</h1>
             </div>
 
                 <label htmlFor="inputEmail" className="sr-only">Email address</label>
