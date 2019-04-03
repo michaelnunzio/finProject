@@ -113,7 +113,7 @@ export default class NavBar extends Component{
                             {dashboard}
                             <li><a className="dropdown-trigger" href='#!' data-target="dropdown2" style={otherBtn}><i className="material-icons left">assignment_ind</i>Login<i className="material-icons right">arrow_drop_down</i></a></li>
                             <li><a href="/" id="logout" onClick={handleLogout} style={styleLogout}><i className="material-icons left">lock</i>Logout</a></li>
-                            <li><a className="dropdown-trigger" href='#!' data-target="dropdown1" style={otherBtn}><i className="material-icons left">assignment</i>Register<i className="material-icons right">arrow_drop_down</i></a></li>
+                            <li><i className="material-icons left">assignment</i><a className="dropdown-trigger" href='#!' data-target="dropdown1" style={otherBtn}>Register<i className="material-icons right">arrow_drop_down</i></a></li>
 
                         </ul>
                         </div>
