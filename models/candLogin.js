@@ -69,6 +69,11 @@ required: false,
 unique: true,
 trim: true
 },
+
+project: {
+  type: String,
+  required: false
+},
 //***ADD A WAY TO ADD RES- ASK VINIT***/
 
 company:{
