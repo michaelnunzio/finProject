@@ -52,7 +52,7 @@ export default class candPro extends Component{
                     <NavBar company={true}/>
                 </div>
 
-                <div className="container cProfile"> 
+                <div className="container"> 
                         <div className='row'>
                             <h2 className='col l6 offset-l3 m10 offset-m1 s10 offset-s1 editProH'>Company Info</h2> 
                         </div>

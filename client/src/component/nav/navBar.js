@@ -85,9 +85,10 @@ export default class NavBar extends Component{
         }else if(this.state.compProfile){
             console.log('returning compProfile route')
             dashboard = <li><a href='/compProfile' style={styleLogout}><i className="material-icons left">home</i>Dashboard</a></li>;
-        }else{
-            dashboard = <li><a href='/' style={styleLogout}><i className="material-icons left">home</i>Dashboard</a></li>;
         }
+        // else{
+        //     dashboard = <li><a href='/' style={styleLogout}><i className="material-icons left">home</i>Dashboard</a></li>;
+        // }
 
         return(
         <React.Fragment>
@@ -111,9 +112,9 @@ export default class NavBar extends Component{
                             <li><a href="/" style={otherBtn}><i className="material-icons left">home</i>Home</a></li>
                             {/* <li><a href='' style={styleLogout}><i className="material-icons left">home</i>Dashboard</a></li>*/}
                             {dashboard}
-                            <li><a className="dropdown-trigger" href='#!' data-target="dropdown2" style={otherBtn}><i className="material-icons left">assignment_ind</i>Login<i className="material-icons right">arrow_drop_down</i></a></li>
+                            <li><a className="dropdown-trigger" href='#!' data-target="dropdown2" style={otherBtn}><span><i className="material-icons left">assignment_ind</i></span>Login<i className="material-icons right">arrow_drop_down</i></a></li>
                             <li><a href="/" id="logout" onClick={handleLogout} style={styleLogout}><i className="material-icons left">lock</i>Logout</a></li>
-                            <li><a className="dropdown-trigger" href='#!' data-target="dropdown1" style={otherBtn}><i className="material-icons left">assignment</i>Register<i className="material-icons right">arrow_drop_down</i></a></li>
+                            <li><a className="dropdown-trigger" href='#!' data-target="dropdown1" style={otherBtn}><span><i className="material-icons left" style={otherBtn}>assignment</i></span>Register<i className="material-icons right">arrow_drop_down</i></a></li>
 
                         </ul>
                         </div>
