@@ -41,7 +41,8 @@ router.route("/register/candidate")
           title: title,
           tech: technologies,
           desc: description,
-          git: github
+          git: github,
+          project: project
         });
 
         userCand.createUser(newUser, function(err, user){
