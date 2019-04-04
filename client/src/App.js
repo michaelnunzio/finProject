@@ -28,12 +28,14 @@ class App extends Component {
   
   componentWillMount() {
      axios.get('/auth/user').then((data)=>{
-       console.log(data.data.user);
+       console.log('App.js auth route: ',data.data.user);
 
        this.setState({
          isLoggedIn: data.data.auth, 
          loading: false,  
         });
+
+        console.log('logged in: ',this.state.isLoggedIn)
 
      });
   }

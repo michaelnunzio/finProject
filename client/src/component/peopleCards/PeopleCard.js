@@ -41,15 +41,13 @@ export default class PeopleCard extends Component {
   render() {
     return (
       <div>
-                <div className='row newNn'>
-                    <NavBar candidate={false}/>
-                </div>
-
-
-      <div className="App">
-        <CardDeck cards={this.state.cards} shiftCard={this.shiftCard.bind(this)} />
-        <Buttons cards={this.state.cards} shiftCard={this.shiftCard.bind(this)} />
-      </div>
+        <div className='row newNn'>
+          <NavBar company={true}/>
+        </div>
+        <div className="App">
+          <CardDeck cards={this.state.cards} shiftCard={this.shiftCard.bind(this)} />
+          <Buttons cards={this.state.cards} shiftCard={this.shiftCard.bind(this)} />
+        </div>
       </div>
     )
   
