@@ -44,11 +44,10 @@ export default class PeopleCard extends Component {
         <div className='row newNn'>
           <NavBar company={true}/>
         </div>
-
-      <div className="App">
-        <CardDeck cards={this.state.cards} shiftCard={this.shiftCard.bind(this)} />
-        <Buttons cards={this.state.cards} shiftCard={this.shiftCard.bind(this)} />
-      </div>
+        <div className="App">
+          <CardDeck cards={this.state.cards} shiftCard={this.shiftCard.bind(this)} />
+          <Buttons cards={this.state.cards} shiftCard={this.shiftCard.bind(this)} />
+        </div>
       </div>
     )
   

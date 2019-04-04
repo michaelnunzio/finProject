@@ -11,6 +11,11 @@ function handleLogout(){
     })
 }
 
+
+// $(document).ready(function(){
+//     $('.sidenav').sidenav();
+//   });
+
 export default class NavBar extends Component{
 
     constructor(){
@@ -65,6 +70,8 @@ export default class NavBar extends Component{
         })
     }
 
+    
+
     // componentDidMount(){
     //     console.log('nav button status inside didmount: ',this.state.showMenu)
     //     if(this.state.showMenu){
@@ -107,8 +114,8 @@ export default class NavBar extends Component{
                     </ul>
                     <nav>
                         <div className="nav-wrapper">
-                        <a href="/" className="brand-logo"><img className="responsive-img jHlogo" alt='logo' src={logo} /></a>
-                        <ul className="right hide-on-med-and-down">
+                        <a href="/" className="brand-logo"><img className="hide-on-med-and-down responsive-img jHlogo" alt='logo' src={logo} /></a>
+                        <ul className="right okk">
                             <li><a href="/" style={otherBtn}><i className="material-icons left">home</i>Home</a></li>
                             {/* <li><a href='' style={styleLogout}><i className="material-icons left">home</i>Dashboard</a></li>*/}
                             {dashboard}
@@ -118,7 +125,9 @@ export default class NavBar extends Component{
 
                         </ul>
                         </div>
+                        
                     </nav>
+
                 </header>
                 </div>
         </React.Fragment>

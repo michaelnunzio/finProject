@@ -36,11 +36,11 @@ export default class HomePage extends Component{
                     {/* <div class="row"> */}
                     {/* <div className='col l6 offset-l6 disCont'> */}
                         <h1 className="display-3 jHin">Welcome to JobHuntr</h1>
-
-                        <ul>With JobHuntr we make your job search easy with unlimited opportunities</ul>
-                        <ul>Swipe left or right, on the job you like!</ul> 
-                        <ul style={otherBtn}>In order to get started, please login!</ul> 
-                        
+                    <div className='yew'>
+                        <ul className='yew'>With JobHuntr we make your job search easy with unlimited opportunities</ul>
+                        <ul className='yew'>Swipe left or right, on the job you like!</ul> 
+                        <ul className='yew' style={otherBtn}>In order to get started, please login!</ul> 
+                    </div>
                         <p><a className="btn btn1" href="/register/employer" role="button" style={otherBtn}>Sign Up as Employer</a>
                         <a className="btn btn1" href="/register/candidate" role="button" style={otherBtn}>Sign Up as Job Seeker</a></p>
                     {/* </div> */}
