@@ -2,18 +2,19 @@
     opacity: 1;
     background-color: lightgrey;
     /* color: #aaa !important */
+
 }
 nav{
     /* background-color: transparent !important; */
     color: black;
     height:0px;
-
   }
 
 .jHlogo{
     height: 60%;
     width: 60%;
     margin-top: 5px;
+    /* text-align: left; */
 }
 
 .nahHov:hover{
@@ -33,5 +34,11 @@ nav{
     a:hover{
         color: teal;
     }
+
+    .brand-logo{
+        /* text-align: left; */
+        /* flex: 1; */
+    }
+
 
 
